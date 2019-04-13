@@ -1,4 +1,96 @@
 {
+  "details": {
+    "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+    "naptanId": "490G00005183",
+    "modes": ["bus"],
+    "icsCode": "1005183",
+    "smsCode": "58009",
+    "stopType": "NaptanOnstreetBusCoachStopPair",
+    "stationNaptan": "490G00005183",
+    "lines": [{
+      "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+      "id": "179",
+      "name": "179",
+      "uri": "/Line/179",
+      "type": "Line",
+      "crowding": {
+        "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+      },
+      "routeType": "Unknown",
+      "status": "Unknown"
+    }],
+    "lineGroup": [{
+      "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+      "naptanIdReference": "490005183E",
+      "stationAtcoCode": "490G00005183",
+      "lineIdentifier": ["179", "212", "397", "444"]
+    }],
+    "lineModeGroups": [{
+      "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+      "modeName": "bus",
+      "lineIdentifier": ["179", "212", "397", "444"]
+    }],
+    "status": true,
+    "id": "490G00005183",
+    "commonName": "Balgonie Road",
+    "placeType": "StopPoint",
+    "additionalProperties": [],
+    "children": [{
+      "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+      "naptanId": "490005183N",
+      "indicator": "Stop GS",
+      "stopLetter": "GS",
+      "modes": ["bus"],
+      "icsCode": "1005183",
+      "stopType": "NaptanPublicBusCoachTram",
+      "stationNaptan": "490G00005183",
+      "lines": [{
+        "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+        "id": "179",
+        "name": "179",
+        "uri": "/Line/179",
+        "type": "Line",
+        "crowding": {
+          "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+        },
+        "routeType": "Unknown",
+        "status": "Unknown"
+      }],
+      "lineGroup": [{
+        "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+        "naptanIdReference": "490005183N",
+        "stationAtcoCode": "490G00005183",
+        "lineIdentifier": ["179", "212", "397", "444"]
+      }],
+      "lineModeGroups": [{
+        "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+        "modeName": "bus",
+        "lineIdentifier": ["179", "212", "397", "444"]
+      }],
+      "status": true,
+      "id": "490005183N",
+      "commonName": "Balgonie Road",
+      "placeType": "StopPoint",
+      "additionalProperties": [{
+        "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+        "category": "Direction",
+        "key": "CompassPoint",
+        "sourceSystemKey": "Naptan490",
+        "value": "W"
+      }, {
+        "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+        "category": "Direction",
+        "key": "Towards",
+        "sourceSystemKey": "CountDown",
+        "value": "Chingford Station"
+      }],
+      "children": [],
+      "lat": 51.628584,
+      "lon": 0.002878
+    }],
+    "lat": 51.628806,
+    "lon": 0.003076
+  },
   "arrivals": [
     {
       "$type": "Tfl.Api.Presentation.Entities.Prediction, Tfl.Api.Presentation.Entities",

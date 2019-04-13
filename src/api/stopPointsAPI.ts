@@ -8,5 +8,8 @@ const makeAPICall = async (endpoint: string) => {
   return response.json()
 }
 
+export const getStopPointDetails = (stopId: string): Promise<typeof responses.details> =>
+  makeAPICall(`/StopPoint/${stopId}`)
+
 export const getStopPointArrivals = (stopId: string): Promise<typeof responses.arrivals> =>
   makeAPICall(`/StopPoint/${stopId}/arrivals`)
