@@ -1,0 +1,35 @@
+{
+  "arrivals": [
+    {
+      "$type": "Tfl.Api.Presentation.Entities.Prediction, Tfl.Api.Presentation.Entities",
+      "id": "752394284",
+      "operationType": 1,
+      "vehicleId": "LTZ1543",
+      "naptanId": "490004963CE",
+      "stationName": "Chalk Farm Road / Morrisons",
+      "lineId": "168",
+      "lineName": "168",
+      "platformName": "CE",
+      "direction": "outbound",
+      "bearing": "107",
+      "destinationNaptanId": "",
+      "destinationName": "Old Kent Road, Tesco",
+      "timestamp": "2019-04-13T09:24:30.6305864Z",
+      "timeToStation": 956,
+      "currentLocation": "",
+      "towards": "Euston or Warren Street",
+      "expectedArrival": "2019-04-13T09:40:26Z",
+      "timeToLive": "2019-04-13T09:40:56Z",
+      "modeName": "bus",
+      "timing": {
+        "$type": "Tfl.Api.Presentation.Entities.PredictionTiming, Tfl.Api.Presentation.Entities",
+        "countdownServerAdjustment": "-00:00:13.2449590",
+        "source": "2019-04-12T21:11:02.863Z",
+        "insert": "2019-04-13T09:24:26.632Z",
+        "read": "2019-04-13T09:24:13.344Z",
+        "sent": "2019-04-13T09:24:30Z",
+        "received": "0001-01-01T00:00:00Z"
+      }
+    }
+  ]
+}
