@@ -2,16 +2,11 @@
 import { jsx, Global } from '@emotion/core'
 import { Fragment } from 'react'
 import usePromise from './hooks/usePromise'
-import { getStopPointArrivals, getStopPointDetails } from './api/stopPointsAPI'
+import { getStopPointArrivals, getStopPointDetails } from './api/tfl/stopPoints'
+import { getTubeLineStatuses } from './api/tfl/lines'
+import { Unpacked } from './types'
 
 const EXAMPLE_STOP_ID = '490004963CE'
-
-// TODO: Move this type:
-type Unpacked<T> =
-  T extends (infer U)[] ? U :
-  T extends (...args: any[]) => infer U ? U :
-  T extends Promise<infer U> ? U :
-  T;
 
 const getDetails = () => getStopPointDetails(EXAMPLE_STOP_ID)
 const getArrivals = () => getStopPointArrivals(EXAMPLE_STOP_ID)
@@ -43,8 +38,9 @@ const StopPointDetails = (props: StopPointDetailsProps) => {
 
 const App = () => {
   // TODO: Show error and loading statuses
-  const [details, detailsStatus] = usePromise(getDetails)
-  const [arrivals, arrivalsStatus] = usePromise(getArrivals)
+  // const [details, detailsStatus] = usePromise(getDetails)
+  // const [arrivals, arrivalsStatus] = usePromise(getArrivals)
+  const [tubeLineStatuses] = usePromise(getTubeLineStatuses)
 
   return (
     <Fragment>
@@ -65,12 +61,20 @@ const App = () => {
           overflow: 'hidden'
         }
       }} />
-      {details && arrivals && (
+      {tubeLineStatuses && tubeLineStatuses.map(({ id, name, color }) => (
+        <div
+          key={id}
+          css={{ background: color }}
+        >
+          {name}
+        </div>
+      ))}
+      {/* {details && arrivals && (
         <StopPointDetails
           details={details}
           arrivals={arrivals}
         />
-      )}
+      )} */}
     </Fragment>
   );
 }
