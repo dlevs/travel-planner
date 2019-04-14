@@ -1,6 +1,6 @@
 import qs from 'querystringify'
 import { makeAPICall } from './base'
-import { StopPoint, StopPointArrival, StopPointSearch, StopPointMode } from './apiTypes'
+import { StopPoint, StopPointArrival, StopPointSearch, StopPointMode } from './types'
 
 export const getStopPoint = (stopId: string): Promise<StopPoint> =>
   makeAPICall(`/StopPoint/${stopId}`)

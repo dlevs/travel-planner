@@ -4,7 +4,8 @@ import { Fragment } from 'react'
 import usePromise from './hooks/usePromise'
 import { getStopPointArrivals, getStopPoint } from './api/tfl/stopPoints'
 import { getTubeLineStatuses } from './api/tfl/lines'
-import { StopPoint, StopPointArrival } from './api/tfl/apiTypes'
+import { StopPoint, StopPointArrival } from './api/tfl/types'
+import TubeLineStatusSquareRow from './components/TubeLineStatusSquareRow'
 
 const EXAMPLE_STOP_ID = '490004963CE'
 
@@ -61,14 +62,9 @@ const App = () => {
           overflow: 'hidden'
         }
       }} />
-      {tubeLineStatuses && tubeLineStatuses.map(({ id, name, color }) => (
-        <div
-          key={id}
-          css={{ background: color }}
-        >
-          {name}
-        </div>
-      ))}
+      {tubeLineStatuses && (
+        <TubeLineStatusSquareRow statuses={tubeLineStatuses} />
+      )}
       {/* {details && arrivals && (
         <StopPointDetails
           details={details}

@@ -11,4 +11,8 @@ export type StopPoint = typeof stopPointResponse
 export type StopPointArrival = Unpacked<typeof stopPointArrivalsResponse>
 export type StopPointMode = 'national-rail' | 'bus'
 
-export type TubeLineStatus = Unpacked<typeof tubeStatusResponse>
+export type TubeLineStatusRaw = Unpacked<typeof tubeStatusResponse>
+export type TubeLineStatusMeta = {
+  color: string;
+}
+export type TubeLineStatus = TubeLineStatusRaw & TubeLineStatusMeta
