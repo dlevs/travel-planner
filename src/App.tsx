@@ -2,26 +2,26 @@
 import { jsx, Global } from '@emotion/core'
 import { Fragment } from 'react'
 import usePromise from './hooks/usePromise'
-import { getStopPointArrivals, getStopPointDetails } from './api/tfl/stopPoints'
+import { getStopPointArrivals, getStopPoint } from './api/tfl/stopPoints'
 import { getTubeLineStatuses } from './api/tfl/lines'
-import { Unpacked } from './types'
+import { StopPoint, StopPointArrival } from './api/tfl/apiTypes'
 
 const EXAMPLE_STOP_ID = '490004963CE'
 
-const getDetails = () => getStopPointDetails(EXAMPLE_STOP_ID)
-const getArrivals = () => getStopPointArrivals(EXAMPLE_STOP_ID)
+// const getDetails = () => getStopPoint(EXAMPLE_STOP_ID)
+// const getArrivals = () => getStopPointArrivals(EXAMPLE_STOP_ID)
 
 interface StopPointDetailsProps {
-  details: Unpacked<ReturnType<typeof getDetails>>;
-  arrivals: Unpacked<ReturnType<typeof getArrivals>>;
+  stopPoint: StopPoint;
+  arrivals: StopPointArrival[];
 }
 
 const StopPointDetails = (props: StopPointDetailsProps) => {
-  const { details, arrivals } = props
+  const { stopPoint, arrivals } = props
 
   return (
     <Fragment>
-      <h2>{details.commonName}</h2>
+      <h2>{stopPoint.commonName}</h2>
       <ul>
         {arrivals
           .sort((a, b) => a.timeToStation - b.timeToStation)

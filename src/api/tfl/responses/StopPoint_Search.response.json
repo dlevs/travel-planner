@@ -1,0 +1,285 @@
+{
+  "$type": "Tfl.Api.Presentation.Entities.SearchResponse, Tfl.Api.Presentation.Entities",
+  "query": "Welling",
+  "total": 23,
+  "matches": [
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1001318",
+      "topMostParentId": "910GWELLING",
+      "modes": [
+        "bus",
+        "national-rail"
+      ],
+      "zone": "4",
+      "id": "910GWELLING",
+      "name": "Welling Rail Station",
+      "lat": 51.464798,
+      "lon": 0.10169
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "90007694",
+      "topMostParentId": "910GWELNGTN",
+      "modes": [
+        "national-rail"
+      ],
+      "id": "910GWELNGTN",
+      "name": "Wellington (Shropshire) Rail Station",
+      "lat": 52.701305,
+      "lon": -2.517165
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "90007890",
+      "topMostParentId": "910GWLNGBRO",
+      "modes": [
+        "national-rail"
+      ],
+      "id": "910GWLNGBRO",
+      "name": "Wellingborough Rail Station",
+      "lat": 52.303783,
+      "lon": -0.676651
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1005318",
+      "topMostParentId": "490G00005318",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00005318",
+      "name": "Circus Road / Wellington Road",
+      "lat": 51.532917,
+      "lon": -0.173695
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1006406",
+      "topMostParentId": "490G00006406",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00006406",
+      "name": "Wellington Road North",
+      "lat": 51.469717,
+      "lon": -0.376584
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1007195",
+      "topMostParentId": "490G00007195",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00007195",
+      "name": "Gipsy Road Welling",
+      "lat": 51.466615,
+      "lon": 0.123672
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1007969",
+      "topMostParentId": "490G00007969",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00007969",
+      "name": "Avondale Road Welling",
+      "lat": 51.466999,
+      "lon": 0.120825
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1009283",
+      "topMostParentId": "490G00009283",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00009283",
+      "name": "Wellington Avenue",
+      "lat": 51.371586,
+      "lon": -0.229086
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1014353",
+      "topMostParentId": "490G00014353",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00014353",
+      "name": "Welling High Street",
+      "lat": 51.462426,
+      "lon": 0.108592
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1014354",
+      "topMostParentId": "490G00014354",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00014354",
+      "name": "Welling Library",
+      "lat": 51.462139,
+      "lon": 0.105541
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1014356",
+      "topMostParentId": "490G00014356",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00014356",
+      "name": "Wellington Crescent",
+      "lat": 51.40215,
+      "lon": -0.269886
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1014362",
+      "topMostParentId": "490G00014362",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00014362",
+      "name": "Wellington Road South",
+      "lat": 51.464859,
+      "lon": -0.379722
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1014364",
+      "topMostParentId": "490G00014364",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00014364",
+      "name": "Bellegrove Road / Welling Way",
+      "lat": 51.464619,
+      "lon": 0.093633
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1014365",
+      "topMostParentId": "490G00014365",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00014365",
+      "name": "Rochester Way / Welling Way",
+      "lat": 51.461422,
+      "lon": 0.075665
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1014367",
+      "topMostParentId": "490G00014367",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00014367",
+      "name": "Welling Way / Rochester Way",
+      "lat": 51.462033,
+      "lon": 0.076239
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1015262",
+      "topMostParentId": "490G00015262",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00015262",
+      "name": "Wellington Avenue / Blackfen Road",
+      "lat": 51.450147,
+      "lon": 0.102787
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1016207",
+      "topMostParentId": "490G00016207",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00016207",
+      "name": "Welling Way / Sherwood Road",
+      "lat": 51.462533,
+      "lon": 0.088557
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1016791",
+      "topMostParentId": "490G00016791",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00016791",
+      "name": "Wellington Road Enfield",
+      "lat": 51.634419,
+      "lon": -0.074985
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1019067",
+      "topMostParentId": "490G00019067",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00019067",
+      "name": "Blackfen Road / Wellington Avenue",
+      "lat": 51.450409,
+      "lon": 0.103763
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1019726",
+      "topMostParentId": "490G00019726",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00019726",
+      "name": "Welling Way / Bellegrove Road",
+      "lat": 51.464093,
+      "lon": 0.093854
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1023110",
+      "topMostParentId": "490G00023110",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G00023110",
+      "name": "Wellington Road Bush Hill Park",
+      "lat": 51.643132,
+      "lon": -0.073806
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1004922",
+      "topMostParentId": "490G000446",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G000446",
+      "name": "Central Avenue / Welling Station",
+      "lat": 51.463891,
+      "lon": 0.099114
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.MatchedStop, Tfl.Api.Presentation.Entities",
+      "icsId": "1011802",
+      "topMostParentId": "490G000733",
+      "modes": [
+        "bus"
+      ],
+      "id": "490G000733",
+      "name": "Ruskin Avenue / Welling Station",
+      "lat": 51.463522,
+      "lon": 0.100666
+    }
+  ]
+}

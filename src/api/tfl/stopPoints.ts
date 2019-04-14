@@ -1,12 +1,12 @@
+import qs from 'querystringify'
 import { makeAPICall } from './base'
-import responses from './stopPoints.responses.json'
-import { Unpacked } from '../../types';
+import { StopPoint, StopPointArrival, StopPointSearch, StopPointMode } from './apiTypes'
 
-type StopPointDetails = typeof responses.details
-type StopPointArrival = Unpacked<typeof responses.arrivals>
-
-export const getStopPointDetails = (stopId: string): Promise<StopPointDetails> =>
+export const getStopPoint = (stopId: string): Promise<StopPoint> =>
   makeAPICall(`/StopPoint/${stopId}`)
 
 export const getStopPointArrivals = (stopId: string): Promise<StopPointArrival[]> =>
-  makeAPICall(`/StopPoint/${stopId}/arrivals`)
+  makeAPICall(`/StopPoint/${stopId}/Arrivals`)
+
+export const searchStopPoints = (query: string, mode: StopPointMode ): Promise<StopPointSearch> =>
+  makeAPICall(`/StopPoint/Search?${qs.stringify({ query, mode })}`)

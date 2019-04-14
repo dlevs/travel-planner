@@ -1,0 +1,400 @@
+{
+  "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+  "naptanId": "490G00014353",
+  "modes": [
+    "bus"
+  ],
+  "icsCode": "1014353",
+  "smsCode": "52270",
+  "stopType": "NaptanOnstreetBusCoachStopCluster",
+  "stationNaptan": "490G00014353",
+  "lines": [
+    {
+      "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+      "id": "486",
+      "name": "486",
+      "uri": "/Line/486",
+      "type": "Line",
+      "crowding": {
+        "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+      },
+      "routeType": "Unknown",
+      "status": "Unknown"
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+      "id": "89",
+      "name": "89",
+      "uri": "/Line/89",
+      "type": "Line",
+      "crowding": {
+        "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+      },
+      "routeType": "Unknown",
+      "status": "Unknown"
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+      "id": "96",
+      "name": "96",
+      "uri": "/Line/96",
+      "type": "Line",
+      "crowding": {
+        "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+      },
+      "routeType": "Unknown",
+      "status": "Unknown"
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+      "id": "b16",
+      "name": "B16",
+      "uri": "/Line/b16",
+      "type": "Line",
+      "crowding": {
+        "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+      },
+      "routeType": "Unknown",
+      "status": "Unknown"
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+      "id": "n89",
+      "name": "N89",
+      "uri": "/Line/n89",
+      "type": "Line",
+      "crowding": {
+        "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+      },
+      "routeType": "Unknown",
+      "status": "Unknown"
+    }
+  ],
+  "lineGroup": [
+    {
+      "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+      "naptanIdReference": "490014353R",
+      "stationAtcoCode": "490G00014353",
+      "lineIdentifier": [
+        "486",
+        "89",
+        "96",
+        "b16",
+        "n89"
+      ]
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+      "naptanIdReference": "490014353S",
+      "stationAtcoCode": "490G00014353",
+      "lineIdentifier": [
+        "486",
+        "89",
+        "96",
+        "b16",
+        "n89"
+      ]
+    }
+  ],
+  "lineModeGroups": [
+    {
+      "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+      "modeName": "bus",
+      "lineIdentifier": [
+        "486",
+        "89",
+        "96",
+        "b16",
+        "n89"
+      ]
+    }
+  ],
+  "status": true,
+  "id": "490G00014353",
+  "commonName": "Welling High Street",
+  "placeType": "StopPoint",
+  "additionalProperties": [],
+  "children": [
+    {
+      "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+      "naptanId": "490014353R",
+      "indicator": "Stop R",
+      "stopLetter": "R",
+      "modes": [
+        "bus"
+      ],
+      "icsCode": "1014353",
+      "stopType": "NaptanPublicBusCoachTram",
+      "stationNaptan": "490G00014353",
+      "lines": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+          "id": "486",
+          "name": "486",
+          "uri": "/Line/486",
+          "type": "Line",
+          "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+          },
+          "routeType": "Unknown",
+          "status": "Unknown"
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+          "id": "89",
+          "name": "89",
+          "uri": "/Line/89",
+          "type": "Line",
+          "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+          },
+          "routeType": "Unknown",
+          "status": "Unknown"
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+          "id": "96",
+          "name": "96",
+          "uri": "/Line/96",
+          "type": "Line",
+          "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+          },
+          "routeType": "Unknown",
+          "status": "Unknown"
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+          "id": "b16",
+          "name": "B16",
+          "uri": "/Line/b16",
+          "type": "Line",
+          "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+          },
+          "routeType": "Unknown",
+          "status": "Unknown"
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+          "id": "n89",
+          "name": "N89",
+          "uri": "/Line/n89",
+          "type": "Line",
+          "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+          },
+          "routeType": "Unknown",
+          "status": "Unknown"
+        }
+      ],
+      "lineGroup": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+          "naptanIdReference": "490014353R",
+          "stationAtcoCode": "490G00014353",
+          "lineIdentifier": [
+            "486",
+            "89",
+            "96",
+            "b16",
+            "n89"
+          ]
+        }
+      ],
+      "lineModeGroups": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+          "modeName": "bus",
+          "lineIdentifier": [
+            "486",
+            "89",
+            "96",
+            "b16",
+            "n89"
+          ]
+        }
+      ],
+      "status": true,
+      "id": "490014353R",
+      "commonName": "Welling High Street / Upper Wickham Lane",
+      "placeType": "StopPoint",
+      "additionalProperties": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+          "category": "Direction",
+          "key": "CompassPoint",
+          "sourceSystemKey": "Naptan490",
+          "value": "W"
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+          "category": "Direction",
+          "key": "Towards",
+          "sourceSystemKey": "CountDown",
+          "value": "Falconwood, Plumstead or Shooters Hill"
+        }
+      ],
+      "children": [],
+      "lat": 51.46224,
+      "lon": 0.108943
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+      "naptanId": "490014353S",
+      "indicator": "Stop S",
+      "stopLetter": "S",
+      "modes": [
+        "bus"
+      ],
+      "icsCode": "1014353",
+      "stopType": "NaptanPublicBusCoachTram",
+      "stationNaptan": "490G00014353",
+      "lines": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+          "id": "486",
+          "name": "486",
+          "uri": "/Line/486",
+          "type": "Line",
+          "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+          },
+          "routeType": "Unknown",
+          "status": "Unknown"
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+          "id": "89",
+          "name": "89",
+          "uri": "/Line/89",
+          "type": "Line",
+          "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+          },
+          "routeType": "Unknown",
+          "status": "Unknown"
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+          "id": "96",
+          "name": "96",
+          "uri": "/Line/96",
+          "type": "Line",
+          "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+          },
+          "routeType": "Unknown",
+          "status": "Unknown"
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+          "id": "b16",
+          "name": "B16",
+          "uri": "/Line/b16",
+          "type": "Line",
+          "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+          },
+          "routeType": "Unknown",
+          "status": "Unknown"
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+          "id": "n89",
+          "name": "N89",
+          "uri": "/Line/n89",
+          "type": "Line",
+          "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+          },
+          "routeType": "Unknown",
+          "status": "Unknown"
+        }
+      ],
+      "lineGroup": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+          "naptanIdReference": "490014353S",
+          "stationAtcoCode": "490G00014353",
+          "lineIdentifier": [
+            "486",
+            "89",
+            "96",
+            "b16",
+            "n89"
+          ]
+        }
+      ],
+      "lineModeGroups": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+          "modeName": "bus",
+          "lineIdentifier": [
+            "486",
+            "89",
+            "96",
+            "b16",
+            "n89"
+          ]
+        }
+      ],
+      "status": true,
+      "id": "490014353S",
+      "commonName": "Welling High Street",
+      "placeType": "StopPoint",
+      "additionalProperties": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+          "category": "Direction",
+          "key": "CompassPoint",
+          "sourceSystemKey": "Naptan490",
+          "value": "E"
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+          "category": "Direction",
+          "key": "Towards",
+          "sourceSystemKey": "CountDown",
+          "value": "Bexleyheath"
+        }
+      ],
+      "children": [],
+      "lat": 51.462426,
+      "lon": 0.108592
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+      "naptanId": "490014353T",
+      "indicator": "Stop T",
+      "stopLetter": "T",
+      "modes": [
+        "bus"
+      ],
+      "icsCode": "1014353",
+      "stopType": "NaptanPublicBusCoachTram",
+      "stationNaptan": "490G00014353",
+      "lines": [],
+      "lineGroup": [],
+      "lineModeGroups": [],
+      "status": true,
+      "id": "490014353T",
+      "commonName": "Welling High Street",
+      "placeType": "StopPoint",
+      "additionalProperties": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+          "category": "Direction",
+          "key": "CompassPoint",
+          "sourceSystemKey": "Naptan490",
+          "value": "W"
+        }
+      ],
+      "children": [],
+      "lat": 51.461956,
+      "lon": 0.111752
+    }
+  ],
+  "lat": 51.462426,
+  "lon": 0.108592
+}
