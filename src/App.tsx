@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 import usePromise from './hooks/usePromise'
 import { getStopPointArrivals, getStopPoint } from './api/tfl/stopPoints'
 import { getTubeLineStatuses } from './api/tfl/lines'
-import { StopPoint, StopPointArrival } from './api/tfl/types'
+import { StopPoint, StopPointArrival } from './api/tfl/generatedResponseTypes'
 import TubeLineStatusSquareRow from './components/TubeLineStatusSquareRow'
 
 const EXAMPLE_STOP_ID = '490004963CE'

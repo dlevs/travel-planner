@@ -1,7 +1,13 @@
 import { makeAPICall } from './base'
-import { TubeLineStatusRaw, TubeLineStatusMeta } from './types'
+import { TubeStatus } from './generatedResponseTypes'
 
-const tubeLineMetaMap: { [key: string]: TubeLineStatusMeta } = {
+interface TubeStatusMeta {
+  color: string;
+}
+
+export type TubeStatusExtended = TubeStatus & TubeStatusMeta
+
+const tubeLineMetaMap: { [key: string]: TubeStatusMeta } = {
   bakerloo: { color: '#b36305' },
   central: { color: '#e32017' },
   circle: { color: '#ffd300' },
@@ -16,12 +22,12 @@ const tubeLineMetaMap: { [key: string]: TubeLineStatusMeta } = {
   default: { color: '#fff' }
 }
 
-const decorateTubeLine = (line: TubeLineStatusRaw) => ({
+const decorateTubeLine = (line: TubeStatus) => ({
   ...line,
   ...(tubeLineMetaMap[line.id] || tubeLineMetaMap.default)
 })
 
 export const getTubeLineStatuses = async () => {
-  const response: TubeLineStatusRaw[] = await makeAPICall('/line/mode/tube/status')
+  const response: TubeStatus[] = await makeAPICall('/line/mode/tube/status')
   return response.map(decorateTubeLine)
 }

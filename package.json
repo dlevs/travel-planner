@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run generate-api-types && react-scripts start",
+    "build": "npm run generate-api-types && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate-api-types": "quicktype ./src/api/tfl/responses -o ./src/api/tfl/generatedResponseTypes.ts"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,6 +30,7 @@
     "@types/querystringify": "2.0.0",
     "@types/react": "16.8.13",
     "@types/react-dom": "16.8.4",
+    "quicktype": "15.0.181",
     "react-scripts": "2.1.8",
     "typescript": "3.4.3"
   }
