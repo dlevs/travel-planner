@@ -37,40 +37,59 @@ const StopPointDetails = (props: StopPointDetailsProps) => {
   )
 }
 
+// TODO: Move me:
+const GlobalStyles = () => (
+  <Global styles={{
+    'html, body, #root': {
+      width: '100%',
+      height: '100%'
+    },
+    body: {
+      background: '#eee'
+    },
+    '#root': {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+    svg: {
+      display: 'block',
+      width: 'auto',
+      height: 'auto'
+    }
+  }} />
+)
+
 const App = () => {
   // TODO: Show error and loading statuses
   // const [details, detailsStatus] = usePromise(getDetails)
   // const [arrivals, arrivalsStatus] = usePromise(getArrivals)
   const [tubeLineStatuses] = usePromise(getTubeLineStatuses)
 
+  console.log(tubeLineStatuses)
   return (
     <Fragment>
-      <Global styles={{
-        html: {
-          background: '#eee',
+      <GlobalStyles />
+      <main
+        css={{
           display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '100%',
-          overflow: 'hidden'
-        },
-        body: {
+          flexDirection: 'column',
           background: '#fff',
           margin: 0,
           width: 480,
-          height: 320,
-          overflow: 'hidden'
-        }
-      }} />
-      {tubeLineStatuses && (
-        <TubeLineStatusSquareRow statuses={tubeLineStatuses} />
-      )}
-      {/* {details && arrivals && (
-        <StopPointDetails
-          details={details}
-          arrivals={arrivals}
-        />
-      )} */}
+          height: 320
+        }}
+      >
+        <div css={{ flex: 1 }}>
+
+        </div>
+        {tubeLineStatuses && (
+          <TubeLineStatusSquareRow
+            statuses={tubeLineStatuses}
+            css={{ flex: 0 }}
+          />
+        )}
+      </main>
     </Fragment>
   );
 }

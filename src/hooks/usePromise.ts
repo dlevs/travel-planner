@@ -7,9 +7,11 @@ function useAPI <T> (
 ): [T | null, Status] {
   let isStale = false
   const [data, setData] = useState(null as null | T)
-  const [status, setStatus] = useState((promiseCreator ? 'inactive' : 'loading') as Status)
+  const [status, setStatus] = useState((promiseCreator ? 'loading' : 'inactive') as Status)
   const callPromiseCreator = async () => {
     try {
+      setStatus('loading')
+
       const result = await promiseCreator()
 
       if (isStale) return
