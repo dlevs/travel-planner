@@ -5,7 +5,9 @@ export const StylesGlobal = () => (
   <Global
     styles={{
       html: {
-        background: '#eee'
+        background: '#eee',
+        fontFamily: `'Open Sans', sans-serif`,
+        color: '#444'
       },
       body: {
         margin: 0
