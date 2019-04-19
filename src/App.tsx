@@ -1,12 +1,11 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
-import { Fragment } from 'react'
-import sortBy from 'lodash/sortBy'
-import overArgs from 'lodash/overArgs'
+import { Fragment, useState } from 'react'
 import usePromise from './hooks/usePromise'
 import { getStopPointArrivals, getStopPoint } from './api/tfl/stopPoints'
 import { getTubeLineStatuses } from './api/tfl/lines'
 import { StopPoint, StopPointArrival } from './api/tfl/generatedResponseTypes'
+import RadioGroup from './components/RadioGroup'
 import TubeLineStatusRow from './components/TubeLineStatusRow'
 import { StylesGlobal } from './components/StylesGlobal'
 import { constrainToScreenSize } from './lib/styleUtils'
@@ -24,25 +23,32 @@ interface StopPointDetailsProps {
 
 const StopPointDetails = (props: StopPointDetailsProps) => {
   const { stopPoint, arrivals } = props
+  const [selectedBusLine, setSelectedBusLine] = useState(
+    stopPoint.lines.length ? stopPoint.lines[0].id : null
+  )
 
   return (
     <Fragment>
-      <h2>{stopPoint.commonName}</h2>
-      <ul>
-        {stopPoint.lines
-          .sort(busLineSorter)
-          .map(({ id, name }) => (
-            <li key={id}>{name}</li>
-          ))
+      {/* TODO: Move this heading style */}
+      <h2 css={{ fontWeight: 300, fontSize: '1.25rem', marginBottom: '0.25rem' }}>
+        {stopPoint.commonName}
+      </h2>
+      <RadioGroup
+        options={
+          stopPoint.lines
+            .sort(busLineSorter)
+            .map(({ id, name }) => ({ value: id, label: name }))
         }
-      </ul>
-      <ul>
+        value={selectedBusLine}
+        setValue={setSelectedBusLine}
+      />
+      {/* <ul>
         {sortBy(arrivals, 'timeToStation').map(({ id, timeToStation, lineName }) => (
           <li key={id}>
             {lineName} - {Math.floor(timeToStation / 60) || 'due'}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </Fragment>
   )
 }
@@ -65,14 +71,14 @@ const App = () => {
           ...constrainToScreenSize(480, 320)
         }}
       >
-        {details && arrivals && (
-          <div css={{ flex: 1 }}>
+        <div css={{ flex: 1, padding: '0.5rem' }}>
+          {details && arrivals && (
             <StopPointDetails
               stopPoint={details}
               arrivals={arrivals}
             />
-          </div>
-        )}
+          )}
+        </div>
         {tubeLineStatuses && (
           <TubeLineStatusRow
             statuses={tubeLineStatuses}

@@ -8,3 +8,14 @@ export const constrainToScreenSize = (width: number, height: number) => ({
     transform: 'translate(-50%, -50%)'
   }
 })
+
+export const visuallyHidden = {
+	position: 'absolute',
+	overflow: 'hidden',
+	clip: 'rect(0 0 0 0)',
+	height: 1,
+	width: 1,
+	margin: -1,
+	padding: 0,
+	border: 0
+} as const
