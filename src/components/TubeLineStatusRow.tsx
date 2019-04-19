@@ -8,18 +8,18 @@ interface Props {
   statuses: TubeStatusExtended[];
 }
 
-const TubeLineStatusSquareRow = ({ statuses }: Props) => (
+const TubeLineStatusRow = ({ statuses }: Props) => (
   <div css={{
     display: 'flex',
     '> *': {
       flex: 1
     }
   }}>
-    {statuses.map(status => {
-      const foundDisruption = status.lineStatuses.find(({ disruption }) => !!disruption)
+    {statuses.map(({ id, lineStatuses, color, name }) => {
+      const foundDisruption = lineStatuses.find(({ disruption }) => !!disruption)
 
       return (
-        <div key={status.id}>
+        <div key={id} title={name}>
           <Circle css={{
             width: 10,
             // TODO: Make a variable for "red" error color:
@@ -27,11 +27,11 @@ const TubeLineStatusSquareRow = ({ statuses }: Props) => (
             // TODO: spacing variables
             margin: '0 auto 5px'
           }} />
-          <Square fill={status.color} />
+          <Square fill={color} />
         </div>
       )
     })}
   </div>
 )
 
-export default TubeLineStatusSquareRow
+export default TubeLineStatusRow

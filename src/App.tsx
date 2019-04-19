@@ -1,11 +1,13 @@
 /** @jsx jsx */
-import { jsx, Global } from '@emotion/core'
+import { jsx } from '@emotion/core'
 import { Fragment } from 'react'
 import usePromise from './hooks/usePromise'
 import { getStopPointArrivals, getStopPoint } from './api/tfl/stopPoints'
 import { getTubeLineStatuses } from './api/tfl/lines'
 import { StopPoint, StopPointArrival } from './api/tfl/generatedResponseTypes'
-import TubeLineStatusSquareRow from './components/TubeLineStatusSquareRow'
+import TubeLineStatusRow from './components/TubeLineStatusRow'
+import { StylesGlobal } from './components/StylesGlobal'
+import { constrainToScreenSize } from './lib/styleUtils'
 
 const EXAMPLE_STOP_ID = '490004963CE'
 
@@ -37,29 +39,6 @@ const StopPointDetails = (props: StopPointDetailsProps) => {
   )
 }
 
-// TODO: Move me:
-const GlobalStyles = () => (
-  <Global styles={{
-    'html, body, #root': {
-      width: '100%',
-      height: '100%'
-    },
-    body: {
-      background: '#eee'
-    },
-    '#root': {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center'
-    },
-    svg: {
-      display: 'block',
-      width: 'auto',
-      height: 'auto'
-    }
-  }} />
-)
-
 const App = () => {
   // TODO: Show error and loading statuses
   // const [details, detailsStatus] = usePromise(getDetails)
@@ -69,22 +48,18 @@ const App = () => {
   console.log(tubeLineStatuses)
   return (
     <Fragment>
-      <GlobalStyles />
+      <StylesGlobal />
       <main
         css={{
           display: 'flex',
           flexDirection: 'column',
           background: '#fff',
-          margin: 0,
-          width: 480,
-          height: 320
+          ...constrainToScreenSize(480, 320)
         }}
       >
-        <div css={{ flex: 1 }}>
-
-        </div>
+        <div css={{ flex: 1 }} />
         {tubeLineStatuses && (
-          <TubeLineStatusSquareRow
+          <TubeLineStatusRow
             statuses={tubeLineStatuses}
             css={{ flex: 0 }}
           />
