@@ -12,10 +12,7 @@ export const StylesGlobal = () => (
 
         // Prevent every small interaction resulting in text selection
         // on raspberry pi touch screen
-        userSelect: 'none',
-
-        // Hide cursor on raspberry pi. TODO: Don't do this for desktop
-        cursor: 'none'
+        userSelect: 'none'
       },
       html: {
         background: '#eee',
@@ -23,8 +20,10 @@ export const StylesGlobal = () => (
         fontSize: 16,
         color: '#444'
       },
-      body: {
-        margin: 0
+      'html, body, #root': {
+        overflow: 'hidden',
+        margin: 0,
+        padding: 0
       },
       svg: {
         display: 'block',

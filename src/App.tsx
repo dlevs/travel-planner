@@ -10,6 +10,7 @@ import TubeLineStatusRow from './components/TubeLineStatusRow'
 import { StylesGlobal } from './components/StylesGlobal'
 import { constrainToScreenSize } from './lib/styleUtils'
 import { busLineSorter } from './lib/busLineUtils'
+import Clock from './components/Clock';
 
 const EXAMPLE_STOP_ID = '490004963CE'
 
@@ -72,6 +73,7 @@ const App = () => {
         }}
       >
         <div css={{ flex: 1, padding: '0.5rem' }}>
+          <Clock />
           {details && arrivals && (
             <StopPointDetails
               stopPoint={details}
