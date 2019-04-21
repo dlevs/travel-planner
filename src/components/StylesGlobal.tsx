@@ -6,8 +6,8 @@ export const StylesGlobal = () => (
     styles={{
       '*, *::after, *::before': {
         boxSizing: 'border-box',
-        '-moz-osx-font-smoothing': 'grayscale',
-        '-webkit-font-smoothing': 'antialiased',
+        MozOsxFontSmoothing: 'grayscale',
+        WebkitFontSmoothing: 'antialiased',
         fontSmoothing: 'antialiased',
 
         // Prevent every small interaction resulting in text selection

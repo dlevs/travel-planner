@@ -28,7 +28,7 @@ const RadioGroup = ({
         name={name}
         value={option.value}
         checked={option.value === value}
-        onClick={() => { console.log('really?'); setValue(option.value) }}
+        onChange={() => setValue(option.value)}
       >
         {option.label}
       </RadioBox>

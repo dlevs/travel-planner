@@ -60,7 +60,6 @@ const App = () => {
   const [arrivals, arrivalsStatus] = usePromise(getArrivals)
   const [tubeLineStatuses] = usePromise(getTubeLineStatuses)
 
-  console.log(tubeLineStatuses)
   return (
     <Fragment>
       <StylesGlobal />
